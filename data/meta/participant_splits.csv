@@ -1,0 +1,59 @@
+participant,cohort,gender,stratum,n_clips,exercises,split,fold
+P01,expert,M,expert-M-standing,90,E01 E02 E03 E04 E05,dev,3
+P02,expert,M,expert-M-floor,162,E01 E02 E03 E04 E05 E06 E07 E08 E09,dev,2
+P03,expert,M,expert-M-floor,159,E01 E02 E03 E04 E05 E06 E07 E08 E09,lockbox,
+P04,expert,M,expert-M-floor,161,E01 E02 E03 E04 E05 E06 E07 E08 E09,dev,2
+P05,expert,M,expert-M-floor,162,E01 E02 E03 E04 E05 E06 E07 E08 E09,dev,3
+P06,expert,M,expert-M-floor,161,E01 E02 E03 E04 E05 E06 E07 E08 E09,dev,4
+P07,expert,M,expert-M-floor,162,E01 E02 E03 E04 E05 E06 E07 E08 E09,dev,1
+P08,expert,M,expert-M-floor,161,E01 E02 E03 E04 E05 E06 E07 E08 E09,dev,0
+P09,expert,F,expert-F,72,E01 E02 E03 E04 E05 E06,dev,2
+P10,expert,F,expert-F,70,E01 E02 E03 E04 E05 E06,dev,4
+P11,expert,F,expert-F,70,E01 E02 E03 E04 E05 E06,dev,1
+P12,expert,F,expert-F,72,E01 E02 E03 E04 E05 E06,lockbox,
+P13,expert,F,expert-F,108,E01 E02 E03 E04 E05 E06,lockbox,
+P14,expert,F,expert-F,72,E01 E02 E03 E04 E05 E06,dev,0
+P15,expert,F,expert-F,72,E01 E02 E03 E04 E05 E06,dev,0
+P16,expert,F,expert-F,107,E01 E02 E03 E04 E05 E06,dev,3
+P17,expert,M,expert-M-floor,157,E01 E02 E03 E04 E05 E06 E07 E08 E09,dev,4
+P18,expert,M,expert-M-floor,162,E01 E02 E03 E04 E05 E06 E07 E08 E09,dev,1
+P19,expert,M,expert-M-floor,160,E01 E02 E03 E04 E05 E06 E07 E08 E09,dev,1
+P20,expert,M,expert-M-floor,161,E01 E02 E03 E04 E05 E06 E07 E08 E09,dev,3
+P21,expert,M,expert-M-floor,162,E01 E02 E03 E04 E05 E06 E07 E08 E09,lockbox,
+P22,expert,M,expert-M-floor,162,E01 E02 E03 E04 E05 E06 E07 E08 E09,lockbox,
+P23,expert,M,expert-M-floor,162,E01 E02 E03 E04 E05 E06 E07 E08 E09,dev,0
+P24,expert,M,expert-M-standing,24,E01 E02 E03 E04,dev,2
+P26,nonexpert,F,nonexpert-F,24,E01 E03 E05,dev,3
+P27,nonexpert,M,nonexpert-M-floor,19,E01 E08 E09,dev,3
+P28,nonexpert,M,nonexpert-M-floor,33,E01 E05 E08 E09,dev,4
+P29,nonexpert,M,nonexpert-M-floor,44,E01 E03 E05 E08 E09,dev,0
+P30,nonexpert,F,nonexpert-F,23,E01 E03 E05,dev,4
+P31,nonexpert,M,nonexpert-M-floor,29,E01 E03 E05 E08 E09,dev,0
+P32,nonexpert,M,nonexpert-M-floor,42,E01 E03 E05 E08 E09,dev,1
+P33,nonexpert,M,nonexpert-M-standing,12,E01 E03,dev,2
+P34,nonexpert,F,nonexpert-F,26,E01 E03 E05,lockbox,
+P35,nonexpert,M,nonexpert-M-floor,44,E01 E03 E05 E08 E09,lockbox,
+P36,nonexpert,M,nonexpert-M-standing,19,E01 E03 E05,lockbox,
+P37,nonexpert,M,nonexpert-M-floor,13,E01 E03 E05 E08 E09,dev,1
+P38,nonexpert,M,nonexpert-M-floor,19,E05 E08 E09,dev,2
+P39,nonexpert,M,nonexpert-M-floor,12,E01 E03 E05 E09,dev,3
+P40,nonexpert,M,nonexpert-M-standing,24,E01 E03 E05,dev,1
+P41,nonexpert,M,nonexpert-M-floor,13,E01 E03 E05 E08 E09,dev,0
+P42,nonexpert,M,nonexpert-M-floor,20,E01 E03 E05 E08 E09,dev,4
+P43,nonexpert,M,nonexpert-M-standing,7,E03,dev,4
+P45,nonexpert,M,nonexpert-M-floor,12,E08 E09,dev,4
+P46,nonexpert,M,nonexpert-M-floor,12,E08 E09,dev,1
+P47,nonexpert,M,nonexpert-M-floor,12,E03 E08,dev,2
+P48,nonexpert,M,nonexpert-M-floor,15,E01 E03 E08,lockbox,
+P49,nonexpert,M,nonexpert-M-floor,12,E03 E08,dev,3
+P50,nonexpert,M,nonexpert-M-floor,11,E03 E08,lockbox,
+P52,nonexpert,M,nonexpert-M-standing,9,E01,dev,0
+P53,nonexpert,F,nonexpert-F,25,E01 E03 E05,dev,2
+P55,nonexpert,M,nonexpert-M-standing,15,E01 E05,dev,3
+P56,nonexpert,F,nonexpert-F,17,E01 E03 E05,dev,0
+P57,nonexpert,F,nonexpert-F,20,E01 E03 E05,dev,1
+P58,nonexpert,F,nonexpert-F,22,E01 E03 E05,dev,2
+P59,nonexpert,F,nonexpert-F,20,E01 E03 E05,dev,0
+P60,nonexpert,F,nonexpert-F,25,E01 E03 E05,dev,4
+P61,nonexpert,F,nonexpert-F,11,E01 E03,dev,1
+P62,nonexpert,F,nonexpert-F,14,E01 E03,lockbox,

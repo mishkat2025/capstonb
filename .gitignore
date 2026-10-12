@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# The dataset and everything made from it stay on the computer that holds them:
+# videos, pose tracks, score sheets, tables per clip, and every picture or report
+# that shows a participant. See data/README.md.
+data/*
+!data/README.md
+!data/meta/
+data/meta/*
+!data/meta/participant_splits.csv
+outputs/
+archive/
+
+# Model weights are fetched by scripts/download_models.py; only the list of sources is kept.
+models/*
+!models/sources.json
+
+# Editor folders
+.vscode/
+.idea/

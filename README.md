@@ -36,14 +36,19 @@ and is not needed to run anything.
 
 ## Setting up
 
-Needs Windows, Python 3.11, about 6 GB of free disk space and, for four of the five
-models, an NVIDIA graphics card with a recent driver. [uv](https://docs.astral.sh/uv/) is
-used when it is installed, otherwise pip.
+Needs Windows, an internet connection and about 7 GB of free disk space. Nothing has to
+be installed beforehand.
 
 **One step:** double-click `setup.bat`. It creates `.venv`, installs the packages listed in
 `requirements.txt`, and downloads the model weights (about 0.9 GB).
 
-The same by hand:
+- The packages are installed with [uv](https://docs.astral.sh/uv/). If the computer does not have uv, `setup.bat` downloads it into the project's `.tools` folder (23 MB, checked against uv's published checksum). 
+- If the computer has no Python 3.11, uv downloads one.
+- Everything goes into the project folder, except what uv keeps in the user's profile: its download cache and the Python it downloaded.
+- An NVIDIA graphics card with a recent driver makes four of the five models fast. Without one they still run, on the processor, at roughly a fifth to a fifteenth of the speed.
+- It is safe to run `setup.bat` again after an interruption: finished steps are skipped.
+
+The same by hand, when uv is already installed:
 
 ```
 uv venv .venv --python 3.11
@@ -51,7 +56,7 @@ uv pip install --python .venv\Scripts\python.exe --no-deps --index-strategy unsa
 .venv\Scripts\python scripts\download_models.py
 ```
 
-or, without uv:
+or with pip, when Python 3.11 is already installed (this route has not been tried):
 
 ```
 py -3.11 -m venv .venv
@@ -62,7 +67,7 @@ py -3.11 -m venv .venv
 - **`--no-deps` is needed.** Two of the packages ask for a second copy of OpenCV and of ONNX Runtime, which would overwrite parts of the ones the project uses. `requirements.txt` already lists every package that is needed, with exact versions.
 - **The weights are not Python packages**, so `requirements.txt` cannot install them. `scripts/download_models.py` fetches them, and the program also fetches any that are still missing the first time a model is used. `--list` shows what is present without downloading anything.
 - **Each downloaded file is compared with `models/sources.json`**, the record of the files the project was developed with. A difference is reported.
-- **Tried on one computer only**, the one the project was developed on (Windows 11, Ryzen 7 7700, RTX 4060 Ti). Linux and macOS have not been tried.
+- **How far this has been tried.** `setup.bat` was run on a fresh copy of the repository with uv and Python hidden from it, on the computer the project was developed on (Windows 11, Ryzen 7 7700, RTX 4060 Ti); the demo then ran with the graphics card and with the card hidden. Linux and macOS have not been tried.
 
 ## Getting the data
 

@@ -1,7 +1,8 @@
 # Exact package versions the project was developed with (Python 3.11, Windows), frozen on 2026-10-12.
 #
 # The simplest way to use this file is setup.bat, which creates .venv, installs these
-# packages and then downloads the model weights. By hand:
+# packages and then downloads the model weights. It fetches uv, and uv fetches Python 3.11,
+# when the computer has neither. By hand:
 #
 #   with uv:   uv venv .venv --python 3.11
 #              uv pip install --python .venv\Scripts\python.exe --no-deps --index-strategy unsafe-best-match -r requirements.txt

@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 .venv/
 
+# uv, when setup.bat had to download it
+.tools/
+
 # The dataset and everything made from it stay on the computer that holds them:
 # videos, pose tracks, score sheets, tables per clip, and every picture or report
 # that shows a participant. See data/README.md.
